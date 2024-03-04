@@ -9,3 +9,7 @@ To start the slide show:
 Edit the [slides.md](./slides.md) to see the changes.
 
 Learn more about Slidev on [documentations](https://sli.dev/).
+
+---
+
+the design is highly oriented towards antfus talk from vue amsterdam https://github.com/antfu/talks/tree/main/2024-02-29
