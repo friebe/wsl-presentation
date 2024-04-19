@@ -90,6 +90,7 @@ layout: center
 ```console
 wsl --install <Distribution Name> # konfiguration der wsl spezifischen Features + installation image
 ```
+<span v-click>Installation über den Microsoft store möglich</span>
 </v-clicks>
 
 ---
@@ -105,7 +106,7 @@ layout: center
 <!--
 Wie bei vielen Antworten im Leben heißt die antwort it depends. Und jeder kann für sich entscheiden, ob er es nutzen möchte oder vollkommen mit windows zufrieden ist. Danke Jan diese Folie hättest du dir auch sparen können.
 
-Ich bin  nämlich zufrieden mit Windows!
+Ich bin  nämlich nicht zufrieden mit Windows!
 Vor ca. 4 Jahren bin ich auf WSL1 aufmerksam geworden und fande es damals schon eine coole Sache in Linux und somit Kernal näher zu programmieren und 
 Windows ein wenig den Rücken zu kehren und die spezifischen MS Probleme abzuschütteln. Ging leider nicht ganz auf - mit WSL kamen andere Probleme -.-
 
@@ -126,6 +127,15 @@ layout: center
 ---
 <h1 important-text-5xl>Echte Vorteile - Fakten!</h1>
 
+---
+---
+- Gute WSL Integration in Visual Studio Code (hängt sich direkt auf deine WSL Machine)
+- WSL für Android (WSA) Android Entwickler können Apps direkt auf WIN 10 ausführen
+- Gute Plattform unterstützung für Cloud-native Anwendungen wie Docker, Kubernetes
+- Hinweis: Kein aufwendiges dualboot !
+- Drag & Drop zwischen Windows und WSL Dateisystemen möglich
+- Code ist teilweise Open Source verfügbar 
+- Unterstützung von Grafikanwendungen aus WSL heraus
 
 
 ---
@@ -133,6 +143,17 @@ layout: center
 ---
 
 <h1 important-text-5xl>Echte Nachteile - Fakten!</h1>
+
+---
+---
+- Leistungeinbußen besonders bei WSL1 da die Kommunikation nur auf einer Übersetzungsschicht basiert
+- Hardwarebeschränkungen (Host System muss Hyper-V unterstützen und auch viel RAM und eine gute CPU besitzen)
+- WSL ist kein natives/echtes Linux
+- Inkompatibilität mit einigen Linux-Softwarepaketen
+- Dateisystem-Unterschiede (Vorsicht beim hin und her kopieren zwischen beiden Welten)
+- Hoher Ressourcenverbrauch (nimmt sich das wa es braucht von deiner Host Maschine)
+- Komplexität bei der Netzwerkkonfiguration (WSL benutzt ein vom Host isoliertes,eigenes Netzwerk System)
+- Updates besonders von WSL1 auf WSL2 können umfangreich werden (major update)
 
 <!--
 Wie wir alle wissen bringt eine neues Feature nicht immer nur Vorteile, sondern auch Nachteile mit sich. Ich persönlich fnde immer wichtig auch die Nachteile zu kennen -->
